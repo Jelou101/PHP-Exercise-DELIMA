@@ -33,7 +33,7 @@
 
     //Sort the array again and print it in an unordered list
     sort($cities);
-    echo "<p><strong>Cities after adding new ones and sorting again:</strong></p>";
+    echo "<p><b>Cities after adding new ones and sorting again:</b></p>";
     echo "<ul>";
     foreach ($cities as $city) {
         echo "<li>$city</li>";
