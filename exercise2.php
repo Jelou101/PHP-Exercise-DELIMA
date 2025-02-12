@@ -4,39 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Exercise 2 DELIMA</title>
-    <style>
-        body {
-            background: url('https://wallpapersok.com/images/hd/8-bit-aesthetic-city-artwork-xe1moq1q21qqtlrf.jpg') no-repeat center center fixed;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            background:linear-gradient(135deg, #ffe4e9, #fad0c4);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #C2185B;
-        }
-        p {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            background: white;
-            margin: 5px;
-            padding: 8px;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="exercise2.css">
 </head>
 <body>
     <div class="container">
