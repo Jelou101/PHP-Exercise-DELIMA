@@ -85,9 +85,9 @@
         $weather_conditions = array ("rain", "sunshine", "clouds", "hail", "sleet", "snow", "wind");
 
         // Echo the statement using the array values
-        echo "<p>We've seen all kinds of weather this month. At the beginning of the month, we had <span>{$weather_conditions[5]}</span> and <span>{$weather_conditions[6]}</span>. ";
-        echo "Then came <span>{$weather_conditions[1]}</span> with a few <span>{$weather_conditions[2]}</span> and some <span>{$weather_conditions[0]}</span>. ";
-        echo "At least we didn't get any <span>{$weather_conditions[3]}</span> or <span>{$weather_conditions[4]}</span>.</p>";
+        echo "<p>We've seen all kinds of weather this month. At the beginning of the month, we had <span>{$weather_conditions[5]}</span> and <span>{$weather_conditions[6]}</span>.
+        Then came <span>{$weather_conditions[1]}</span> with a few <span>{$weather_conditions[2]}</span> and some <span>{$weather_conditions[0]}</span>.
+        At least we didn't get any <span>{$weather_conditions[3]}</span> or <span>{$weather_conditions[4]}</span>.</p>";
     ?>
 </body>
 </html>
