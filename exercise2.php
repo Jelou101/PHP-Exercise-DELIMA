@@ -8,39 +8,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>PHP Exercise 1</h1>
+        <h1>PHP Exercise 2</h1>
         <h2>Claudin Jelou B. Delima</h2>
 
         <?php
-        //Create an array with the initial list of cities
+        // array; list of cities
         $cities = array("Tokyo","Mexico City","New York City","Mumbai","Seoul","Shanghai","Lagos","Buenos Aires","Cairo","London");
 
-        //Print the cities separated by commas using a loop
+        // Function to print cities in an unordered list
+        function printCityList($cities) {
+            echo "<ul>";
+            foreach ($cities as $city) {
+                echo "<li>$city</li>";
+            }
+            echo "</ul>";
+        }
+
+        // Print cities separated by commas using a loop
         echo "<p><b>Cities separated by commas:</b> ";
-        $count = count($cities);
+        $lastIndex = count($cities) - 1;
         foreach ($cities as $index => $city) {
-        echo $index < $count - 1 ? "$city, " : "$city";
+            echo $index < $lastIndex ? "$city, " : "$city";
         }
         echo "</p>";
 
-        //Sort the array and print it in an unordered list
+        // Sort and print in an unordered list
         sort($cities);
-        echo "<p><b>Cities (sorted):</b></p><ul>";
-        foreach ($cities as $city) {
-        echo "<li>$city</li>";
-        }
-        echo "</ul><br>"; //line brk for clarity
+        echo "<p><b>Cities (sorted):</b></p>";
+        printCityList($cities);
 
-        //Add more cities to the array
+        // Add new cities
         array_push($cities, "Los Angeles", "Calcutta", "Osaka", "Beijing");
 
-        //Sort the array again and print it in an unordered list
+        // Sort again and print the final sorted list
         sort($cities);
-        echo "<p><b>Cities after adding new ones and sorting again:</b></p><ul>";
-        foreach ($cities as $city) {
-        echo "<li>$city</li>";
-        }
-        echo "</ul>";
+        echo "<p><b>Cities after adding new ones and sorting again:</b></p>";
+        printCityList($cities);
         ?>
     </div>
 </body>
